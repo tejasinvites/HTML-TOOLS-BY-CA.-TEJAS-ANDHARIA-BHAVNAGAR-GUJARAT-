@@ -15,5 +15,8 @@ This repository focuses on:
 * **Compliance:** Specialized tools for Income Tax, GST, Finance, and office efficiency.
 * **Education:** Resources for CA student training and professional development.
 
+* ## 🚀 Live Tools
+* **Date & Panchang Utility:** [Click here to use the tool online](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/DateToDay&Panchang.html)
+
 ## 📱 Connect with Me
 * **Socials:** [YouTube](https://www.youtube.com/@CATejas) | [Facebook](https://www.facebook.com/catejasandharia/about/?_rdr) | [LinkedIn](https://www.linkedin.com/in/ca-tejas-andharia-143139aa/)
