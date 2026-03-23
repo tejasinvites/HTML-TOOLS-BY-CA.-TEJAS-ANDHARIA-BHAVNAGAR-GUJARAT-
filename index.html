@@ -7,95 +7,82 @@
 <title>CA Tejas Andharia - HTML Utility Hub</title>
 
 <style>
-
-/* 🌙 DARK MODE AUTO */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    background: linear-gradient(to right, #eef2f3, #dfe9f3);
     text-align: center;
-    transition: 0.3s;
-}
-
-@media (prefers-color-scheme: dark) {
-    body {
-        background: #0f172a;
-        color: #e2e8f0;
-    }
-    .card {
-        background: #1e293b;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    body {
-        background: linear-gradient(to right, #eef2f3, #dfe9f3);
-        color: #2c3e50;
-    }
 }
 
 /* HEADER */
-header {
-    padding: 40px 20px;
+.header {
+    padding: 30px 20px;
 }
 
-.profile-img {
-    width: 110px;
+.header img {
+    width: 100px;
     border-radius: 50%;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-h1 {
-    margin-top: 15px;
-    font-size: 28px;
+.header h1 {
+    margin: 10px 0 5px;
+    color: #2c3e50;
 }
 
-.subtitle {
+.header p {
     color: #7f8c8d;
 }
 
-/* BUTTONS */
-.btn {
-    display: inline-block;
-    margin: 10px 5px;
-    padding: 10px 18px;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
+/* YOUTUBE BUTTON */
+.youtube-btn {
+    display:inline-block;
+    background:#ff0000;
+    color:white;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+    margin-top:10px;
 }
 
-.youtube {
-    background: #ff0000;
-    color: white;
+.youtube-btn:hover {
+    background:#cc0000;
 }
 
-.youtube:hover {
-    background: #cc0000;
+/* STATS */
+.stats {
+    margin-top:15px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
-.excel {
-    background: #16a34a;
-    color: white;
-}
-
-.excel:hover {
-    background: #15803d;
+.stat-box {
+    background:white;
+    padding:12px 18px;
+    border-radius:10px;
+    box-shadow:0 2px 6px rgba(0,0,0,0.1);
+    font-size:14px;
 }
 
 /* GRID */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 25px;
-    max-width: 1100px;
-    margin: 30px auto;
+    padding: 30px;
 }
 
 /* CARD */
 .card {
+    background: white;
+    width: 300px;
     padding: 25px;
-    border-radius: 14px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
     transition: 0.3s;
 }
 
@@ -111,45 +98,68 @@ h1 {
     color: #7f8c8d;
 }
 
+/* BUTTON */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.active-btn {
+    background: #3498db;
+    color: white;
+}
+
+.locked-btn {
+    background: #bdc3c7;
+    color: white;
+}
+
+/* EXCEL SECTION */
+.excel-section {
+    margin: 30px;
+}
+
+.download-btn {
+    background: green;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 /* FOOTER */
 footer {
-    margin-top: 40px;
+    margin: 40px 0;
+    color: #95a5a6;
     font-size: 0.85em;
-    color: #94a3b8;
 }
-
-footer a {
-    color: #3498db;
-    text-decoration: none;
-}
-
 </style>
+
 </head>
 
 <body>
 
 <!-- HEADER -->
-<header>
-
-    <img src="Picture1.png" class="profile-img">
-
+<div class="header">
+    <img src="Picture1.png" alt="Logo">
     <h1>CA Tejas Andharia's HTML Utility Hub</h1>
-    <p class="subtitle">Automation Tools for Finance, Taxation & Productivity</p>
+    <p>Automation Tools for Finance, Taxation & Productivity</p>
 
-    <!-- YouTube Button -->
-    <div>
-        <a href="https://www.youtube.com/@catejas" target="_blank" class="btn youtube">
-            ▶ Subscribe on YouTube
-        </a>
+    <!-- YouTube -->
+    <a href="https://www.youtube.com/@catejas" target="_blank" class="youtube-btn">
+        ▶ Subscribe on YouTube
+    </a>
+
+    <div class="stats">
+        <div class="stat-box">🎥 <b>220+ Videos</b></div>
+        <div class="stat-box">👁 <b>24+ Lakhs Views</b></div>
     </div>
-
-    <!-- Live Subscriber Count -->
-    <div>
-        <img src="https://img.shields.io/youtube/channel/subscribers/UC9X0lS9Hn0bW7E2l9mQ7X6Q?style=for-the-badge&logo=youtube&color=red"
-             alt="YouTube Subscribers">
-    </div>
-
-</header>
+</div>
 
 <!-- TOOL SECTION -->
 <div class="grid">
@@ -157,38 +167,34 @@ footer a {
     <div class="card">
         <h3>DatetoDay & Panchang Utility</h3>
         <p>Calculate days from dates and view detailed Panchang information.</p>
-        <a href="DateToDay&Panchang.html" class="btn">View App</a>
+        <a href="DateToDay&Panchang.html" class="btn active-btn">View App</a>
     </div>
 
     <div class="card" style="opacity:0.6;">
         <h3>More Tools Coming Soon</h3>
         <p>GST, Income Tax and automation tools will be added soon.</p>
-        <span class="btn" style="background:#94a3b8; color:white;">Locked</span>
+        <span class="btn locked-btn">Locked</span>
     </div>
 
 </div>
 
-<!-- EXCEL DOWNLOAD SECTION -->
-<h2>📥 Excel Tools</h2>
+<!-- EXCEL SECTION -->
+<div class="excel-section">
+    <h2>📊 Excel Tools</h2>
 
-<div class="grid">
-
-    <div class="card">
+    <div class="card" style="margin:auto;">
         <h3>Download Excel Utility</h3>
         <p>Advanced Excel-based automation tools for professionals.</p>
-        <a href="#" class="btn excel">Download</a>
+        <a href="#" class="download-btn">Download Excel File</a>
     </div>
-
 </div>
 
 <!-- FOOTER -->
 <footer>
-    Developed by CA Tejas Andharia - Bhavnagar (Gujarat) <br>
-    F.C.A, B.Com, DISA, DIRM | AICA Level 1 Copilot Faculty <br><br>
+    Developed by CA Tejas Andharia, Bhavnagar (Gujarat) <br><br>
 
-    <a href="LICENSE" target="_blank">📜 License</a> |
-    <a href="README.md" target="_blank">📘 Documentation</a>
-
+    <a href="README.md" target="_blank">📄 ReadMe</a> |
+    <a href="LICENSE" target="_blank">📜 License</a>
 </footer>
 
 </body>
