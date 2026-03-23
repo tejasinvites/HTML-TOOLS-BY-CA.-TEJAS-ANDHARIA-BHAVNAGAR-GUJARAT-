@@ -11,9 +11,9 @@ Welcome to the official repository for professional automation utilities develop
 
 ## 🛠 Tools & Expertise
 This repository focuses on:
-* **Automation:** MS Excel-VBA, Python, HTML, AppScript, etc. utilities.
-* **Compliance:** Specialized tools for Income Tax, GST, Finance, and office efficiency.
-* **Education:** Resources for CA student training and professional development.
+* **Automation:** HTML Utilities.
+* **Compliance:** Specialized tools for Income Tax, GST, Finance, office efficiency and some general purpose tools also.
+* **Education:** Resources for CA student training ,professional development and general public utility.
 
 * ## 🚀 Live Tools
 * **Date & Panchang Utility:** [Click here to use the tool online](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/DateToDay&Panchang.html)
