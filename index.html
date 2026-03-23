@@ -7,114 +7,188 @@
 <title>CA Tejas Andharia - HTML Utility Hub</title>
 
 <style>
+
+/* 🌙 DARK MODE AUTO */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
     margin: 0;
-    padding: 20px;
     text-align: center;
+    transition: 0.3s;
 }
 
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #0f172a;
+        color: #e2e8f0;
+    }
+    .card {
+        background: #1e293b;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(to right, #eef2f3, #dfe9f3);
+        color: #2c3e50;
+    }
+}
+
+/* HEADER */
 header {
-    margin-bottom: 40px;
+    padding: 40px 20px;
+}
+
+.profile-img {
+    width: 110px;
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
 }
 
 h1 {
-    color: #2c3e50;
+    margin-top: 15px;
+    font-size: 28px;
 }
 
+.subtitle {
+    color: #7f8c8d;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 18px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.youtube {
+    background: #ff0000;
+    color: white;
+}
+
+.youtube:hover {
+    background: #cc0000;
+}
+
+.excel {
+    background: #16a34a;
+    color: white;
+}
+
+.excel:hover {
+    background: #15803d;
+}
+
+/* GRID */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: 30px auto;
 }
 
+/* CARD */
 .card {
-    background: white;
     padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
+    border-radius: 14px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 
 .card h3 {
     color: #2980b9;
-    margin-top: 0;
 }
 
 .card p {
     color: #7f8c8d;
-    font-size: 0.9em;
-    min-height: 50px;
 }
 
-.btn {
-    display: inline-block;
-    background: #3498db;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #2980b9;
-}
-
+/* FOOTER */
 footer {
-    margin-top: 50px;
-    color: #95a5a6;
-    font-size: 0.8em;
+    margin-top: 40px;
+    font-size: 0.85em;
+    color: #94a3b8;
 }
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- HEADER -->
 <header>
-    <img src="Picture1.png" style="width:100px; border-radius:12px; margin-bottom:10px;">
-    
-    <h1>CA Tejas Andharia's HTML Utility Hub</h1>
-    <p>Professional Automation Tools for Finance & Taxation</p>
 
-    <!-- YouTube Subscribe Button -->
-    <div style="margin-top:15px;">
-        <a href="https://www.youtube.com/@catejas" target="_blank"
-           style="background:#ff0000; color:white; padding:10px 18px; 
-           border-radius:6px; text-decoration:none; font-weight:bold;">
-           ▶ Subscribe on YouTube
+    <img src="Picture1.png" class="profile-img">
+
+    <h1>CA Tejas Andharia's HTML Utility Hub</h1>
+    <p class="subtitle">Automation Tools for Finance, Taxation & Productivity</p>
+
+    <!-- YouTube Button -->
+    <div>
+        <a href="https://www.youtube.com/@catejas" target="_blank" class="btn youtube">
+            ▶ Subscribe on YouTube
         </a>
     </div>
+
+    <!-- Live Subscriber Count -->
+    <div>
+        <img src="https://img.shields.io/youtube/channel/subscribers/UC?style=for-the-badge&logo=youtube&color=red"
+             alt="YouTube Subscribers">
+    </div>
+
 </header>
 
+<!-- TOOL SECTION -->
 <div class="grid">
 
-    <!-- TOOL 1 -->
     <div class="card">
         <h3>DatetoDay & Panchang Utility</h3>
         <p>Calculate days from dates and view detailed Panchang information.</p>
         <a href="DateToDay&Panchang.html" class="btn">View App</a>
     </div>
 
-    <!-- FUTURE TOOL -->
-    <div class="card" style="opacity: 0.6;">
+    <div class="card" style="opacity:0.6;">
         <h3>More Tools Coming Soon</h3>
-        <p>Additional utilities for GST, Income Tax, and office automation are being added.</p>
-        <a class="btn" style="background: #95a5a6;">Locked</a>
+        <p>GST, Income Tax and automation tools will be added soon.</p>
+        <span class="btn" style="background:#94a3b8; color:white;">Locked</span>
     </div>
 
 </div>
 
+<!-- EXCEL DOWNLOAD SECTION -->
+<h2>📥 Excel Tools</h2>
+
+<div class="grid">
+
+    <div class="card">
+        <h3>Download Excel Utility</h3>
+        <p>Advanced Excel-based automation tools for professionals.</p>
+        <a href="#" class="btn excel">Download</a>
+    </div>
+
+</div>
+
+<!-- FOOTER -->
 <footer>
-    Developed by CA Tejas Andharia, Bhavnagar (Gujarat) <br>
-    F.C.A, B.Com, DISA, DIRM | AICA Level 1 Copilot Faculty
+    Developed by CA Tejas Andharia - Bhavnagar (Gujarat) <br>
+    F.C.A, B.Com, DISA, DIRM | AICA Level 1 Copilot Faculty <br><br>
+
+    <a href="LICENSE" target="_blank">📜 License</a> |
+    <a href="README.md" target="_blank">📘 Documentation</a>
+
 </footer>
 
 </body>
