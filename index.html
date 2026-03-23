@@ -33,8 +33,8 @@ body {
     color: #7f8c8d;
 }
 
-/* TOOL GRID */
-#toolsContainer {
+/* GRID */
+.grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -62,7 +62,6 @@ body {
 
 .card p {
     color: #7f8c8d;
-    min-height: 50px;
 }
 
 /* BUTTON */
@@ -83,7 +82,6 @@ body {
 .locked-btn {
     background: #bdc3c7;
     color: white;
-    cursor: not-allowed;
 }
 
 /* FOOTER */
@@ -103,48 +101,67 @@ footer {
 <div class="header">
     <img src="Picture1.png" alt="Logo">
     <h1>CA Tejas Andharia's HTML Utility Hub</h1>
-    <p>Automation Tools for Finance, Taxation & General Utility </p>
+    <p>Automation Tools for Finance, Taxation & General Utility</p>
 </div>
 
-<!-- TOOL CARDS -->
-<div id="toolsContainer"></div>
+<!-- TOOL GRID -->
+<div class="grid" id="tools"></div>
 
-<!-- SCRIPT (ONLY EDIT THIS PART FOR NEW TOOLS) -->
 <script>
 
+/*
+👉 HOW TO ADD NEW TOOL (VERY EASY)
+
+Just copy below format and paste inside tools array:
+
+{
+    name: "Your Tool Name",
+    description: "Short description",
+    folder: "tools/your-folder-name/",
+    status: "active"
+}
+
+*/
+
+// 🔧 TOOL LIST (ONLY EDIT THIS)
 const tools = [
 
     {
         name: "DatetoDay & Panchang Utility",
         description: "Calculate days from dates and view detailed Panchang information.",
-        link: "DateToDay&Panchang.html",
+        folder: "Tools/Date-to-Day with Panchang/",
         status: "active"
     },
 
     {
-        name: "More Tools Coming Soon",
-        description: "Additional utilities for GST, Income Tax, and office automation are being added.",
-        link: "#",
+        name: "GST Tool (Coming Soon)",
+        description: "GST automation utilities.",
+        folder: "#",
         status: "locked"
     }
 
 ];
 
-// DO NOT TOUCH BELOW CODE
-const container = document.getElementById("toolsContainer");
+
+// 🚀 AUTO UI (DO NOT TOUCH)
+const container = document.getElementById("tools");
 
 tools.forEach(tool => {
     const card = document.createElement("div");
     card.className = "card";
 
+    let button = '';
+
+    if(tool.status === "active"){
+        button = `<a href="${tool.folder}" class="btn active-btn">View App</a>`;
+    } else {
+        button = `<span class="btn locked-btn">Locked</span>`;
+    }
+
     card.innerHTML = `
         <h3>${tool.name}</h3>
         <p>${tool.description}</p>
-        ${
-            tool.status === "active"
-            ? `<a href="${tool.link}" class="btn active-btn">View App</a>`
-            : `<span class="btn locked-btn">Locked</span>`
-        }
+        ${button}
     `;
 
     container.appendChild(card);
