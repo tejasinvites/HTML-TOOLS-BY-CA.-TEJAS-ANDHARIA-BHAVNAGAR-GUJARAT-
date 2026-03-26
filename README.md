@@ -15,8 +15,8 @@ This repository focuses on:
 * **Compliance:** Specialized tools for Income Tax, GST, Finance, office efficiency and some general purpose tools also.
 * **Education:** Resources for CA student training ,professional development and general public utility.
 
-* ## 🚀 Live Tools
-**Visit our webpage for live tools:** [Click here to use the tool online / offline](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/#)
+## 🚀 Live Tools
+**Visit our webpage for live tools:** [Click here to use the tools online / offline](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/#)
 
 ## 📱 Connect with Me
 * **Socials:** [YouTube](https://www.youtube.com/@CATejas) | [Facebook](https://www.facebook.com/catejasandharia/about/?_rdr) | [LinkedIn](https://www.linkedin.com/in/ca-tejas-andharia-143139aa/)
