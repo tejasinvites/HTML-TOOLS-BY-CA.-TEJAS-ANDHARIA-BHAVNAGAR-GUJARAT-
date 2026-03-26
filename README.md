@@ -16,7 +16,7 @@ This repository focuses on:
 * **Education:** Resources for CA student training ,professional development and general public utility.
 
 * ## 🚀 Live Tools
-* **Visit our webpage for live tools:** [Click here to use the tool online / offline]([https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/DateToDay&Panchang.html](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/#))
+**Visit our webpage for live tools:** [Click here to use the tool online / offline](https://tejasinvites.github.io/HTML-TOOLS-BY-CA.-TEJAS-ANDHARIA-BHAVNAGAR-GUJARAT-/#)
 
 ## 📱 Connect with Me
 * **Socials:** [YouTube](https://www.youtube.com/@CATejas) | [Facebook](https://www.facebook.com/catejasandharia/about/?_rdr) | [LinkedIn](https://www.linkedin.com/in/ca-tejas-andharia-143139aa/)
