@@ -1,6 +1,6 @@
-# HTML TOOLS BY CA. TEJAS ANDHARIA, BHAVNAGAR (GUJARAT)
+# AUTOMATION TOOLS BY CA. TEJAS ANDHARIA, BHAVNAGAR (GUJARAT)
 
-Welcome to the official repository for professional automation utilities developed by **CA Tejas Andharia**. This project aims to provide high-efficiency HTML and scripting tools for Chartered Accountants, tax professionals, and students.
+Welcome to the official repository for professional automation utilities developed by **CA Tejas Andharia**. This project aims to provide high-efficiency automation tools for Chartered Accountants, tax professionals, and students.
 
 ## 👨‍💼 About the Author
 * **Name:** CA Tejas Andharia (F.C.A, B.Com, DISA, DIRM)
@@ -11,7 +11,7 @@ Welcome to the official repository for professional automation utilities develop
 
 ## 🛠 Tools & Expertise
 This repository focuses on:
-* **Automation:** HTML Utilities.
+* **Automation:** HTML Utilities, Excel Utilities and some more utilities.
 * **Compliance:** Specialized tools for Income Tax, GST, Finance, office efficiency and some general purpose tools also.
 * **Education:** Resources for CA student training ,professional development and general public utility.
 
